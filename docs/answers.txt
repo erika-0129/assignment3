@@ -1,0 +1,55 @@
+GitLab Tutorials: Completed 10/11/24
+GitHub Account: Opened November 2023
+
+Assignment 3 Answers
+
+1. Paste the console output you saved at the end of step 3C
+
+avila@DESKTOP-44RGPBL MINGW64 ~/Dropbox/School/FSU/2024 Fall/CEN4020/assignment3 (master)
+$ git push origin
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 795 bytes | 795.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/erika-0129/assignment3.git
+   f4975e5..5b922e6  master -> master
+
+
+2. How many commits have been done to the repository (not only by you but by anyone) so far? Write the git command used to get this information.
+
+There are 12 commits. 
+Command: git log
+
+3. When was the README.md  file modified last? Write the git command you used to get this information.
+
+It was last modified on October 14th, 2024 at 14:35:05
+Command: git log -- README.md
+
+
+4. Mention two reasons why branches are used in a Git repository.
+- Allows for multiple developers to collaborate on a task
+- Reduces the chances of working over someone else
+
+5. What is the difference between git log and git status?
+Git status shows the user what files or programs still need to be committed. Git log shows the committed history.
+
+6. What command would you use to see the commits where “Vehicle.h” was one of the committed files?
+git log -- Vehicle.h
+
+7. What command would you use to see the commits whose commit message contains the word “file”?
+git log --grep="file"
+
+8. In the context of object-oriented programming (I) What is inheritance? (II) What is polymorphism? (III) What is encapsulation? 
+I. A concept that allows a class to inherit properties and behaviors from another class
+II. Polymorphism allows objects of different types to be treated as objects of a common superclass. This enables reusability, flexibility and abstraction.
+III. Encapsulation is bundling data and methods into a single unit, usually a class, and controls access to that data.
+
+9.  What is the main difference between the “Dictator and Lieutenants” workflow and the “Integration manager” workflow?
+Dictator/Lieutenants workflow works by having one centralized person push requests to the master branch while the rest can only make pull requests. The Lieutenant can only merge some (but not all) changes and solves conflicts for developers.
+Alternatively, Integration Manager works to resolve conflicts, but all developers are allowed to push and pull to/from the public repository.
+
+10. How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow? 
+This would reduce the amount of conflicting updates done to the project. It would be reviewed in tiers where the lieutenant checks for conflicts and if all is fine, the dictator then can push the final product.
